@@ -10,15 +10,14 @@ const stats = [
 ];
 
 const team = [
-  { name: "Dr. Alex Johnson", role: "Cardiologist", img: "/images/doc1.jpg" },
-  { name: "Dr. Sarah White", role: "Neurologist", img: "/images/doc2.jpg" },
-  { name: "Dr. John Doe", role: "Surgeon", img: "/images/doc3.jpg" },
+  { name: "Dr. Alex Johnson", role: "Cardiologist", img: require("../../assests/doctor1.jpg" )},
+  { name: "Dr. Sarah White", role: "Neurologist", img: require("../../assests/doctor2.jpg" ) },
+  { name: "Dr. John Doe", role: "Surgeon", img: require("../../assests/doctor3.jpg" ) },
 ];
 
 const About = () => {
   return (
     <div className="about-container">
-      {/* Hero Section */}
       <motion.section className="about-hero"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -28,7 +27,6 @@ const About = () => {
         <p>Providing world-class medical services with highly qualified professionals.</p>
       </motion.section>
 
-      {/* Stats Section */}
       <section className="about-stats">
         {stats.map((stat, index) => (
           <motion.div key={index} className="stat-card"
@@ -44,7 +42,6 @@ const About = () => {
         ))}
       </section>
 
-      {/* Team Section */}
       <section className="about-team">
         <h2>Meet Our Experts</h2>
         <div className="team-members">
