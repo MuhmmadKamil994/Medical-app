@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import { motion, useInView } from "framer-motion";
 import "./home.scss"; 
 import Doctorimg from "../../assests/Doctorimg.webp";  
+import Chatbot from "./Chatbot";
 
 const Home = () => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true });
 
-  // Hero Section Animations
   const textVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } },
@@ -27,7 +27,6 @@ const Home = () => {
     },
   };
 
-  // Feature Section Animation
   const featureVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: (custom) => ({
@@ -39,7 +38,6 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      {/* Hero Section */}
       <section className="hero">
         <motion.div 
           className="hero-text"
@@ -98,6 +96,7 @@ const Home = () => {
           </motion.div>
         ))}
       </section>
+      <Chatbot/>
     </div>
   );
 };

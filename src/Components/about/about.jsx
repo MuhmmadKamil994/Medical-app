@@ -33,7 +33,7 @@ const About = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
           >
             <div className="icon">{stat.icon}</div>
             <h3>{stat.value}</h3>
@@ -50,7 +50,7 @@ const About = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
             >
               <img src={member.img} alt={member.name} />
               <h3>{member.name}</h3>

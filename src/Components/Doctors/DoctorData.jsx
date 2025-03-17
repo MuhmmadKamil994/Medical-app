@@ -15,7 +15,7 @@ export const DoctorsProvider = ({ children }) => {
         { id: 4, name: "Dr. Emily Brown", specialty: "Pulmonologist", image: require("../../assests/doctor4.avif") },
         { id: 6, name: "Dr. Ganga Morti", specialty: "General Physician", image: require("../../assests/doctor5.avif") },
         { id: 7, name: "Dr. Malik Nazir", specialty: "MBBS", image: require("../../assests/doctor6.avif") },
-        { id: 8, name: "Dr. Ali", specialty: "Therpiast", image: require("../../assests/doctor7.avif") },
+        { id: 8, name: "Dr. Ayesha", specialty: "Therpiast", image: require("../../assests/doctor7.avif") },
         { id: 9, name: "Dr. Malik Mudasir", specialty: "Lab Technologist", image: require("../../assests/doctor8.avif") },
       ]);
       setLoading(false);
